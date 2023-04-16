@@ -5,8 +5,8 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 1. What is a Database?
 2. SQL and Relational Databases
 3. Installation
-4. Creating a Database
-
+4. Creating, acessing,deleting a Database
+Troubleshooting
 
 ### What is a Database?
 A database serves as a location where data can be stored, managed, and retrieved. Typically, this data is stored in a computer's server. Essentially, you input data into the database, and then you have the ability to view, manipulate, delete, and update the data using various operations provided by the database. 
@@ -25,9 +25,31 @@ pgAdmin is a graphical user interface for PostgreSQL. It is a powerful tool for 
 
 ##Commands
 To list all the databases -> \l
+To connect to a database -> \c database_name
 
-### Creating a Database
+### Creating,Accessing,Deleting a Database
 To create a database, we use the "CREATE DATABASE" command. For example, to create a database called "test", we would write the following command:
 ```sql      
 CREATE DATABASE test;
+```
+Opening a database 
+```sql
+psql -h localhost -p 5432 -U postgres test
+```
+OR
+```sql
+\c test
+```
+Deleting a database
+```sql
+DROP DATABASE test;
+```
+
+### Troubleshooting
+Few problems i have faced were:
+1. Not able to connect to psql bascically the terminal did not recognize "psql": solution is to add the path of the bin and lib folder of postgresql to the environment variables. The path will be found in the installation folder of postgresql.
+
+2. Not able to connect to the database like they ask for your user password: solution is by writing the right command to access the database 
+```sql
+psql -h localhost -p 5432 -U postgres test
 ```
