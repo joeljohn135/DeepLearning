@@ -23,7 +23,7 @@ Head over to https://www.postgresql.org/download/ and download the installer for
 Next open up the SQL shell downloaded with the PostgreSQL installation. You can do this by searching for "psql" in the start menu. This will open up the SQL shell, which is where we will be writing our SQL commands. 
 pgAdmin is a graphical user interface for PostgreSQL. It is a powerful tool for managing databases and performing operations on them. It is not necessary to use pgAdmin, but it is a useful tool for those who are new to SQL. You can download pgAdmin from https://www.pgadmin.org/download/. Follow the instructions to complete the installation process. or get it it downloaded from the start installation procedure.
 
-##Commands
+## Commands
 To list all the databases -> \l
 To connect to a database -> \c database_name
 
