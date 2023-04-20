@@ -53,3 +53,4 @@ Few problems i have faced were:
 ```sql
 psql -h localhost -p 5432 -U postgres test
 ```
+ok
