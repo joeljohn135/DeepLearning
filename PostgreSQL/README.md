@@ -6,6 +6,7 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 2. SQL and Relational Databases
 3. Installation
 4. Creating, acessing,deleting a Database
+4. Create table
 Troubleshooting
 
 ### What is a Database?
@@ -44,7 +45,15 @@ Deleting a database
 ```sql
 DROP DATABASE test;
 ```
-
+### Create table
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+    ....
+);
+```
 ### Troubleshooting
 Few problems i have faced were:
 1. Not able to connect to psql bascically the terminal did not recognize "psql": solution is to add the path of the bin and lib folder of postgresql to the environment variables. The path will be found in the installation folder of postgresql.
@@ -53,4 +62,3 @@ Few problems i have faced were:
 ```sql
 psql -h localhost -p 5432 -U postgres test
 ```
-ok
