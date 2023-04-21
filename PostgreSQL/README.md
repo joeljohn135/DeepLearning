@@ -6,7 +6,9 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 2. SQL and Relational Databases
 3. Installation
 4. Creating, acessing,deleting a Database
-4. Create table
+5. Create and delete table
+6. Important Data Types
+7. Inserting, updating, deleting, and selecting data
 Troubleshooting
 
 ### What is a Database?
@@ -27,7 +29,8 @@ pgAdmin is a graphical user interface for PostgreSQL. It is a powerful tool for 
 ## Commands
 To list all the databases -> \l
 To connect to a database -> \c database_name
-
+To list the relations(table) -> \d
+To list the columns of a table -> \d table_name
 ### Creating,Accessing,Deleting a Database
 To create a database, we use the "CREATE DATABASE" command. For example, to create a database called "test", we would write the following command:
 ```sql      
@@ -54,6 +57,64 @@ CREATE TABLE table_name (
     ....
 );
 ```
+Example without Constraints:
+```sql
+CREATE TABLE person (
+    id INT,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    age INT
+);
+```
+Example with Constraints:
+```sql  
+CREATE TABLE person (
+    id INT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    age INT NOT NULL
+);
+```
+What is a Primary Key?
+A primary key is a unique identifier for a row in a table. It is used to uniquely identify each row in a table. For example, a person table might have a primary key of "id", where each person has a unique ID. This is useful for identifying a specific person in the table. A primary key must be unique for each row in a table, and it cannot be NULL. A primary key can be a single column or a combination of multiple columns.
+Another point to note is someting called BIGSERIAL. It is a special data type that automatically generates unique sequential integers. This is useful for creating a primary key column that increments by 1 for each new row. For example, we can create a "person" table with a primary key column "id" of type BIGSERIAL:
+```sql
+CREATE TABLE person (
+    id BIGSERIAL PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    age INT NOT NULL
+);
+```
+Drop table
+```sql
+DROP TABLE table_name;
+```
+
+### Important Data Types:
+* INT - integer
+* VARCHAR - variable character length
+* TEXT - long character length
+* DATE - date
+* BOOLEAN - true or false
+
+Rest can be found in the link ->
+https://www.postgresql.org/docs/current/datatype.html
+
+### Inserting, updating, deleting, and selecting data
+Inserting data
+```sql  
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+Example:
+```sql
+INSERT INTO person (first_name, last_name, age) 
+VALUES ('John', 'Smith', 25);
+```
+
+
+
 ### Troubleshooting
 Few problems i have faced were:
 1. Not able to connect to psql bascically the terminal did not recognize "psql": solution is to add the path of the bin and lib folder of postgresql to the environment variables. The path will be found in the installation folder of postgresql.
