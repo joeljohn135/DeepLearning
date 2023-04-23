@@ -9,6 +9,7 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 5. Create and delete table
 6. Important Data Types
 7. Inserting, updating, deleting, and selecting data
+8. Operations
 Troubleshooting
 
 ### What is a Database?
@@ -112,7 +113,189 @@ Example:
 INSERT INTO person (first_name, last_name, age) 
 VALUES ('John', 'Smith', 25);
 ```
+### Operations
+#### Selecting data
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name;
+```
+Example:
+```sql
+SELECT * FROM person;
+```
+#### Selecting specific columns
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name;
+```
+Example:
+```sql
+SELECT first_name, last_name FROM person;
+```
+#### Selecting specific rows
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE condition;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE age > 30;
+```
+#### Selecting specific rows with AND
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE age > 30 AND age < 40;
+```
+#### Selecting specific rows with OR
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE age < 18 OR age > 60;
+```
+#### Selecting specific rows with IN
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE column_name IN (value1, value2, value3, ...);
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE age IN (18, 25, 30);
+```
+#### Selecting specific rows with NOT
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE NOT condition;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE NOT age = 30;
+```
+#### Selecting specific rows with BETWEEN
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE age BETWEEN 18 AND 30;
+```
+#### Selecting specific rows with LIKE
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE column_name LIKE pattern;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE first_name LIKE 'J%';
+```
+#### Selecting specific rows with NULL
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE column_name IS NULL;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE first_name IS NULL;
+```
+#### Selecting specific rows with NOT NULL
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE column_name IS NOT NULL;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE first_name IS NOT NULL;
+```
+#### Selecting specific rows with DISTINCT
+```sql
+SELECT DISTINCT column1, column2, column3, ...
+FROM table_name;
+```
+Example:
+```sql
+SELECT DISTINCT first_name FROM person;
+```
+#### Selecting specific rows with ORDER BY
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+ORDER BY column1, column2, column3, ... ASC|DESC;
+```
+Example:
+```sql
+SELECT * FROM person
+ORDER BY age DESC;
+```
+#### Selecting specific rows with LIMIT
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+LIMIT number;
+```
+Example:
+```sql
+SELECT * FROM person
+LIMIT 5;
+```
+#### Distinct
+```sql
+SELECT DISTINCT column1, column2, column3, ...
+FROM table_name;
+```
+Example:
+```sql
+SELECT DISTINCT first_name FROM person;
+```
+#### offset
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+OFFSET number;
+```
+Example:
+```sql
+SELECT * FROM person
+OFFSET 5;
+```
+```sql
+#### Arthmetic operations
+```
 
+```sql 
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE column_name operator value;
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE age + 5 > 30;
+```
 
 
 ### Troubleshooting
