@@ -9,7 +9,8 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 5. Create and delete table
 6. Important Data Types
 7. Inserting, updating, deleting, and selecting data
-8. Operations<br/>
+8. Operations
+<br/>
 😵‍💫Troubleshooting
 
 ### What is a Database?
