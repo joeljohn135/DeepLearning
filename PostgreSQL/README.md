@@ -10,7 +10,7 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 6. Important Data Types
 7. Inserting, updating, deleting, and selecting data
 8. Operations
-<br /> 😵‍💫Troubleshooting
+<br />😵‍💫Troubleshooting
 
 ### What is a Database?
 A database serves as a location where data can be stored, managed, and retrieved. Typically, this data is stored in a computer's server. Essentially, you input data into the database, and then you have the ability to view, manipulate, delete, and update the data using various operations provided by the database. 
