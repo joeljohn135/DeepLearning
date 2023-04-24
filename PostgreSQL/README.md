@@ -10,7 +10,7 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 6. Important Data Types
 7. Inserting, updating, deleting, and selecting data
 8. Operations
-Troubleshooting
+😵‍💫Troubleshooting
 
 ### What is a Database?
 A database serves as a location where data can be stored, managed, and retrieved. Typically, this data is stored in a computer's server. Essentially, you input data into the database, and then you have the ability to view, manipulate, delete, and update the data using various operations provided by the database. 
@@ -295,6 +295,37 @@ Example:
 ```sql
 SELECT * FROM person
 WHERE age + 5 > 30;
+```
+Using both Limit and offset
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+LIMIT number
+OFFSET number;
+```
+Example:
+```sql
+SELECT * FROM person
+LIMIT 5
+OFFSET 5;
+```
+'OR' using Fetch 
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+OFFSET number
+fetch first number rows only;
+```
+#### Using IN 
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE column_name IN (value1, value2, value3, ...);
+```
+Example:
+```sql
+SELECT * FROM person
+WHERE age IN (18, 25, 30);
 ```
 
 
