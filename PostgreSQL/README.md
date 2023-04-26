@@ -5,11 +5,12 @@ Consist of various tutorials and scripts for learning PostgreSQL. These scripts 
 1. [What is a Database?](#what-is-a-database)
 2. [SQL and Relational Databases](#sql-and-relational-databases)
 3. [Installation](#installation)
-4. [Creating, acessing,deleting a Database](#creating-accessing-deleting-a-database)
-5. Create and delete table
-6. Important Data Types
-7. Inserting, updating, deleting, and selecting data
-8. Operations
+4. [Commands](#commands)
+5. [Creating, acessing,deleting a Database](#creatingaccessingdeleting-a-database)
+6. [Create and delete table](#create-table)
+7. [Important Data Types](#important-data-types)
+8. [Inserting, updating, deleting, and selecting data](#inserting-updating-deleting-and-selecting-data)
+9. [Operations](#operations)
 <br/>
 😵‍💫Troubleshooting
 
