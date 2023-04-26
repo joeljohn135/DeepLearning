@@ -394,7 +394,8 @@ SELECT first_name AS name FROM person;
 #### Using Coleasce
 ```sql
 SELECT COALESCE(column_name, 'value')
-#
+FROM table_name;
+```
 
 ### Troubleshooting
 Few problems i have faced were:
