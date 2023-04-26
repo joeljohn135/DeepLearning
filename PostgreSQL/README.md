@@ -328,7 +328,73 @@ Example:
 SELECT * FROM person
 WHERE age IN (18, 25, 30);
 ```
-
+#### Using group by
+```sql
+SELECT column1, column2, column3, ...
+FROM table_name
+GROUP BY column1, column2, column3, ...;
+```
+Example:
+```sql
+SELECT first_name, COUNT(*) FROM person
+GROUP BY first_name;
+```
+#### Using Order and group by and having
+```sql 
+SELECT column1, column2, column3, ...
+FROM table_name
+GROUP BY column1, column2, column3, ...
+HAVING condition;
+```
+Example:
+```sql
+SELECT first_name, COUNT(*) FROM person
+GROUP BY first_name
+HAVING COUNT(*) > 1;
+```
+#### Using Sum,avg,min,max
+```sql
+SELECT SUM(column_name)
+FROM table_name;
+```
+Example:
+```sql
+SELECT SUM(age) FROM person;
+```
+Example:
+```sql
+SELECT AVG(age) FROM person;
+```
+Example:
+```sql
+SELECT MIN(age) FROM person;
+```
+Example:
+```sql
+SELECT MAX(age) FROM person;
+```
+#### Using Round
+```sql
+SELECT ROUND(column_name, number)
+FROM table_name;
+```
+Example:
+```sql
+SELECT ROUND(AVG(age), 2) FROM person;
+```
+#### Using Alias
+```sql
+SELECT column_name AS alias_name
+FROM table_name;
+```
+Example:
+```sql
+SELECT first_name AS name FROM person;
+```
+#### Using Coleasce
+```sql
+SELECT COALESCE(column_name, 'value')
+#
 
 ### Troubleshooting
 Few problems i have faced were:
