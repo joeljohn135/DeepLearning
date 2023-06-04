@@ -6,7 +6,8 @@ Check out my IBM Data Engineering Course Notes ->>> https://outrageous-nannyberr
 </br>
 Check out my Google Data Analytics Course Notes ->>> https://outrageous-nannyberry-5d2.notion.site/Google-Data-Analytics-Notes-5b7176b724a14998b757eee0800f1b7b
 </br>
-Check out my Azure Data Fundamentals Course DP-900 Notes(Freecodecamp) ->>> https://outrageous-nannyberry-5d2.notion.site/Microsoft-Azure-Data-Fundamentals-DP-900-Freecodecamp-SS-95920e6f45804542b1970e5f833bdab8?pvs=4  Note: All credits go to Freecodecamp I simply took the video SS here is the link->>https://www.youtube.com/watch?v=P3qmqUZJ7l0
+Check out my Azure Data Fundamentals Course DP-900 Notes(Freecodecamp) ->>> https://outrageous-nannyberry-5d2.notion.site/Microsoft-Azure-Data-Fundamentals-DP-900-Freecodecamp-SS-95920e6f45804542b1970e5f833bdab8?pvs=4  
+Note: All credits go to Freecodecamp I simply took the video SS here is the link->>https://www.youtube.com/watch?v=P3qmqUZJ7l0
 ## Table of Contents
 
 
