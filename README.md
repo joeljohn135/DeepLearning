@@ -11,4 +11,4 @@ This repository is a treasure trove of tutorial scripts, carefully curated to pr
 4. [Azure Data Fundamentals Course DP-900](https://outrageous-nannyberry-5d2.notion.site/Microsoft-Azure-Data-Fundamentals-DP-900-Freecodecamp-SS-95920e6f45804542b1970e5f833bdab8?pvs=4  ) Note: All credits go to Freecodecamp I simply took the video SS here is the link->>https://www.youtube.com/watch?v=P3qmqUZJ7l0
 5. [Exam cram DP-900 (Notes)](https://www.notion.so/Data-Fundamentals-Dp-900-Exam-Cram-3c802ad550a54855a1ad31419c33051e)
 6. [My Notes DP-900](https://outrageous-nannyberry-5d2.notion.site/My-notes-cb5f5062660343e08773bb32a39d2ea1)
-7. [Kafka-Notes](https://outrageous-nannyberry-5d2.notion.site/Kafka-Notes-49b1433c529e4c3eaf83a0ec8017777a?pvs=4) Notes: All credit goes to Edureka,Javapoint
+7. [Kafka-Notes](https://outrageous-nannyberry-5d2.notion.site/Kafka-Notes-49b1433c529e4c3eaf83a0ec8017777a?pvs=4) Notes: All credit goes to Edureka,Apache kafka doc 
