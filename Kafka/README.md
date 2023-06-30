@@ -1,6 +1,6 @@
-Note: Apache Kafka is suitable for Linux mainly services provided by confluent might be tricky its better to use a VM on windows and install kafka on it.
+Note: Apache Kafka is suitable for Linux mainly . Its better to use Linux VM on windows to install kafka.
 
-However if you want to install kafka on windows follow the below steps: [Click here](# Installation of Apache Kafka on Windows)
+However if you want to install kafka on windows follow the below steps: [Click here](https://github.com/joeljohn135/Learning/tree/main/Kafka#installation-of-apache-kafka-on-windows)
 # Installation of Apache Kafka on Linux
 ## Prerequisites
 - Java 8 or higher
