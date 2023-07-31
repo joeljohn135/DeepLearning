@@ -34,3 +34,131 @@ import pyspark
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("Spark").getOrCreate()
 ```
+### Create a spark session
+A spark session can be created by using the following code:
+```
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("Spark").getOrCreate()
+```
+### read a csv file
+A csv file can be read by using the following code:
+```
+spark.read.option("header",True).csv("file.csv",inferSchema=True)
+```
+### read a json file
+A json file can be read by using the following code:
+```
+spark.read.option("multiline",True).json("file.json")
+```
+### read a parquet file
+A parquet file can be read by using the following code:
+```
+spark.read.parquet("file.parquet")
+```
+### read a text file
+A text file can be read by using the following code:
+```
+spark.read.text("file.txt")
+```
+### read a xml file
+A xml file can be read by using the following code:
+```
+spark.read.format("com.databricks.spark.xml").option("rowTag","tag").load("file.xml")
+```
+### read a avro file
+A avro file can be read by using the following code:
+```
+spark.read.format("avro").load("file.avro")
+```
+### read a orc file
+A orc file can be read by using the following code:
+```
+spark.read.orc("file.orc")
+```
+### Print schema
+The schema of a dataframe can be printed by using the following code:
+```
+df.printSchema()
+```
+### print column names
+The column names of a dataframe can be printed by using the following code:
+```
+df.columns
+```
+### print first n rows
+The first n rows of a dataframe can be printed by using the following code:
+```
+df.show(n)
+```
+### print first n rows in a tabular format
+The first n rows of a dataframe can be printed in a tabular format by using the following code:
+```
+df.show(n,False)
+```
+### select columns
+The columns of a dataframe can be selected by using the following code:
+```
+df.select("col1","col2")
+or
+df.select(col1,col2).show()
+```
+### Other operations
+Other operations that can be performed on a dataframe are:
+1. describe
+```
+df.describe().show()
+```
+2. distinct
+```
+df.distinct().show()
+```
+3. drop
+```
+df.drop("col1","col2")
+```
+4. dropDuplicates
+```
+df.dropDuplicates().show()
+```
+5. dropna
+```
+df.dropna()
+```
+6. fillna
+```
+df.fillna(0)
+```
+
+```
+df.na.drop(how="any",thresh=2,subset=["col1","col2"])
+```
+7. filter
+
+8. groupBy
+9. join
+10. orderBy
+11. selectExpr
+12. union
+13. rename
+```
+df.withColumnRenamed("col1","col2")
+```
+14. Drop a column
+```
+df.drop("col1")
+```
+
+etc.. same as pandas
+
+### Adding a column in a dataframe
+A column can be added to a dataframe by using the following code:
+```
+df.withColumn("col3",df.col1+df.col2)
+```
+### Imputer in Pyspark
+Imputer can be used to fill missing values in a dataframe. It can be used by using the following code:
+```
+from pyspark.ml.feature import Imputer
+imputer = Imputer(inputCols=["col1","col2"],outputCols=["col1","col2"])
+imputer.fit(df).transform(df)
+```
