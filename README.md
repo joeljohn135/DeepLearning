@@ -12,3 +12,4 @@ This repository is a treasure trove of tutorial scripts, carefully curated to pr
 5. [Exam cram DP-900 (Notes)](https://www.notion.so/Data-Fundamentals-Dp-900-Exam-Cram-3c802ad550a54855a1ad31419c33051e)
 6. [My Notes DP-900](https://outrageous-nannyberry-5d2.notion.site/My-notes-cb5f5062660343e08773bb32a39d2ea1)
 7. [Kafka-Notes](https://outrageous-nannyberry-5d2.notion.site/Kafka-Notes-49b1433c529e4c3eaf83a0ec8017777a?pvs=4) Notes: All credit goes to Edureka,Apache kafka doc 
+8. [Spark](https://github.com/joeljohn135/Learning/tree/main/Kafka)
